@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@color/colorAccent"
+        android:id="@+id/img_photo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/img_cover" />
+
+    <TextView
+        style="@style/TextContent.Subtitlee"
+        android:text="@string/tv_genre"
+        android:id="@+id/tv_genre"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_toEndOf="@id/img_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/TextContent"
+        android:text="@string/tv_judul"
+        android:id="@+id/tv_judul"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tv_genre"
+        android:layout_toEndOf="@id/img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/TextContent.Subtitlee"
+        android:text="@string/tv_ph"
+        android:id="@+id/tv_ph"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tv_judul"
+        android:layout_toEndOf="@id/img_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/TextContent.Subtitlee"
+        android:text="@string/tv_tahun"
+        android:id="@+id/tv_tahun"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@id/tv_judul"
+        android:layout_toEndOf="@id/tv_ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/TextContent.Small"
+        android:id="@+id/tv_deskripsi"
+        android:text="@string/tv_overview"
+        android:textSize="12sp"
+        android:maxLines="3"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tv_ph"
+        android:layout_toEndOf="@id/img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/ic_star_black_12dp"
+        android:id="@+id/img_star"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_toEndOf="@id/img_photo"
+        android:layout_below="@id/tv_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/img_rating" />
+
+    <TextView
+        style="@style/TextContent.Subtitlee"
+        android:id="@+id/tv_rating"
+        android:text="@string/tv_rating"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/img_star"
+        android:layout_toEndOf="@id/img_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
